@@ -204,9 +204,8 @@
         </div>
         
         <div class="legend">
-            <span><div class="dot green"></div> On Track (≥83%)</span>
-            <span><div class="dot yellow"></div> Behind (50-82%)</span>
-            <span><div class="dot red"></div> Critical (&lt;50%)</span>
+            <span><div class="dot green"></div> Crushing It (≥140%)</span>
+            <span><div class="dot red"></div> Behind (&lt;80%)</span>
         </div>
     </div>
     
@@ -254,7 +253,7 @@
             document.getElementById('repTableTitle').textContent = `Rep Performance — ${pod.repCount} Reps`;
             
             // Summary cards
-            const goalClass = pod.goalPct >= paceThreshold ? 'green' : pod.goalPct >= 50 ? 'yellow' : 'red';
+            const goalClass = pod.goalPct >= 140 ? 'green' : pod.goalPct >= 80 ? '' : 'red';
             document.getElementById('summaryCards').innerHTML = `
                 <div class="card">
                     <div class="value">${pod.signed}</div>
@@ -300,10 +299,10 @@
             const topRep = reps[0];
             
             document.getElementById('repRows').innerHTML = reps.map((rep, i) => {
-                const goalClass = rep.goalPct >= paceThreshold ? 'on-track' : rep.goalPct >= 50 ? 'behind' : 'critical';
+                const goalClass = rep.goalPct >= 140 ? 'on-track' : rep.goalPct >= 80 ? '' : 'critical';
                 let flag = '';
                 if (i === 0 && rep.goalPct > 0) flag = '<span class="flag top">TOP</span>';
-                else if (rep.goalPct < 50 && rep.goal > 0) flag = '<span class="flag alert">!</span>';
+                else if (rep.goalPct < 80 && rep.goal > 0) flag = '<span class="flag alert">!</span>';
                 
                 return `
                     <div class="rep-row">
