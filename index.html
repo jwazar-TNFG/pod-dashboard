@@ -296,7 +296,7 @@
             `).join('');
             
             // Rep table
-            const reps = pod.reps || [];
+            const reps = (pod.reps || []).sort((a, b) => b.signed - a.signed);
             const topRep = reps[0];
             
             document.getElementById('repRows').innerHTML = reps.map((rep, i) => {
