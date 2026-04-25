@@ -59,7 +59,7 @@
         }
         .rep-header, .rep-row {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
             padding: 10px 12px;
             font-size: 12px;
             align-items: center;
@@ -107,7 +107,7 @@
         
         @media (max-width: 600px) {
             .rep-header, .rep-row {
-                grid-template-columns: 1.5fr 1fr 1fr 1fr;
+                grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
                 font-size: 11px;
                 padding: 8px 10px;
             }
@@ -135,8 +135,9 @@
                 <div>Leads</div>
                 <div>Signed</div>
                 <div>CV</div>
-                <div>Drops</div>
-                <div class="hide-mobile">% Goal</div>
+                <div>Goal</div>
+                <div>% Goal</div>
+                <div class="hide-mobile">Drops</div>
             </div>
             <div id="repRows"></div>
         </div>
@@ -203,8 +204,9 @@
                             <div>${rep.leads || 0}</div>
                             <div>${rep.signed}</div>
                             <div>${rep.cv.toFixed(1)}</div>
-                            <div class="drop-rate">${rep.drops}</div>
-                            <div class="goal-pct ${goalClass} hide-mobile">${rep.goalPct.toFixed(0)}%</div>
+                            <div>${rep.goal.toFixed(0)}</div>
+                            <div class="goal-pct ${goalClass}">${rep.goalPct.toFixed(0)}%</div>
+                            <div class="drop-rate hide-mobile">${rep.drops}</div>
                         </div>
                     `;
                 }).join('');

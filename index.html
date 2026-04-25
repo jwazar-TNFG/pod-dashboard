@@ -197,8 +197,9 @@
                 <div>Leads</div>
                 <div>Signed</div>
                 <div>CV</div>
-                <div>Drops</div>
-                <div class="hide-mobile">% Goal</div>
+                <div>Goal</div>
+                <div>% Goal</div>
+                <div class="hide-mobile">Drops</div>
             </div>
             <div id="repRows"></div>
         </div>
@@ -310,8 +311,9 @@
                         <div>${rep.leads || 0}</div>
                         <div>${rep.signed}</div>
                         <div>${rep.cv.toFixed(1)}</div>
-                        <div class="drop-rate">${rep.drops}</div>
-                        <div class="goal-pct ${goalClass} hide-mobile">${rep.goalPct.toFixed(0)}%</div>
+                        <div>${rep.goal.toFixed(0)}</div>
+                        <div class="goal-pct ${goalClass}">${rep.goalPct.toFixed(0)}%</div>
+                        <div class="drop-rate hide-mobile">${rep.drops}</div>
                     </div>
                 `;
             }).join('');
