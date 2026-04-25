@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-25T16:54:15.193571",
+  "updated": "2026-04-25T16:57:53.795838",
   "month": "April 2026",
   "day": 25,
   "daysInMonth": 30,
@@ -9,6 +9,7 @@
       "code": "SFL",
       "leader": "Willie Gerardo",
       "repCount": 37,
+      "leads": 428,
       "signed": 156,
       "goal": 166.43179487179486,
       "goalPct": 81.28855433195086,
@@ -21,6 +22,7 @@
         {
           "name": "Glenn, Phillip",
           "goal": 1.0,
+          "leads": 2,
           "signed": 2,
           "green": 1,
           "drops": 0,
@@ -32,6 +34,7 @@
         {
           "name": "Milly Pagan",
           "goal": 1.0,
+          "leads": 2,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -43,6 +46,7 @@
         {
           "name": "Fraivelin Martinez",
           "goal": 3.0,
+          "leads": 14,
           "signed": 6,
           "green": 5,
           "drops": 0,
@@ -54,6 +58,7 @@
         {
           "name": "Quevedo, Sofia V",
           "goal": 4.0,
+          "leads": 17,
           "signed": 7,
           "green": 0,
           "drops": 0,
@@ -65,6 +70,7 @@
         {
           "name": "Kristen Taylor Chi",
           "goal": 2.0,
+          "leads": 17,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -76,6 +82,7 @@
         {
           "name": "Marc Voltaire",
           "goal": 12.0,
+          "leads": 31,
           "signed": 21,
           "green": 0,
           "drops": 0,
@@ -87,6 +94,7 @@
         {
           "name": "Leroy G Lee",
           "goal": 3.0,
+          "leads": 10,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -98,6 +106,7 @@
         {
           "name": "Nobles, Dwayne",
           "goal": 1.0,
+          "leads": 2,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -109,6 +118,7 @@
         {
           "name": "Vladimir Jean",
           "goal": 15.0,
+          "leads": 42,
           "signed": 31,
           "green": 1,
           "drops": 4,
@@ -120,6 +130,7 @@
         {
           "name": "Diego Suarez",
           "goal": 3.0,
+          "leads": 3,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -131,6 +142,7 @@
         {
           "name": "Heidi Restrepo",
           "goal": 3.0,
+          "leads": 6,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -142,6 +154,7 @@
         {
           "name": "Cubillos, Jonathan W",
           "goal": 2.0,
+          "leads": 4,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -153,6 +166,7 @@
         {
           "name": "Gaby Vegas",
           "goal": 6.0,
+          "leads": 26,
           "signed": 6,
           "green": 0,
           "drops": 0,
@@ -164,6 +178,7 @@
         {
           "name": "Isis Casares",
           "goal": 3.0,
+          "leads": 5,
           "signed": 3,
           "green": 0,
           "drops": 1,
@@ -175,6 +190,7 @@
         {
           "name": "Vanessa K Brancho Morales",
           "goal": 3.0,
+          "leads": 2,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -186,6 +202,7 @@
         {
           "name": "Sheldon Vickers",
           "goal": 2.0,
+          "leads": 1,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -197,6 +214,7 @@
         {
           "name": "Gerardo, William",
           "goal": 26.9,
+          "leads": 123,
           "signed": 20,
           "green": 0,
           "drops": 1,
@@ -208,6 +226,7 @@
         {
           "name": "Doreans Cisneros",
           "goal": 3.0,
+          "leads": 6,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -219,6 +238,7 @@
         {
           "name": "Toki Dream Team Promotions Inc",
           "goal": 9.0,
+          "leads": 23,
           "signed": 6,
           "green": 0,
           "drops": 1,
@@ -230,6 +250,7 @@
         {
           "name": "Yeici Paola Rondon Garcia",
           "goal": 3.0,
+          "leads": 9,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -241,6 +262,7 @@
         {
           "name": "Zion Jean",
           "goal": 10.0,
+          "leads": 13,
           "signed": 7,
           "green": 0,
           "drops": 1,
@@ -252,6 +274,7 @@
         {
           "name": "Lisbeth A Zambrano Montilla",
           "goal": 2.0,
+          "leads": 9,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -263,6 +286,7 @@
         {
           "name": "Donawa, Anthony K",
           "goal": 4.0,
+          "leads": 7,
           "signed": 3,
           "green": 0,
           "drops": 1,
@@ -274,6 +298,7 @@
         {
           "name": "Fabian, Jose M",
           "goal": 3.6,
+          "leads": 5,
           "signed": 2,
           "green": 0,
           "drops": 1,
@@ -285,6 +310,7 @@
         {
           "name": "Ashley Prado",
           "goal": 3.0,
+          "leads": 9,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -296,6 +322,7 @@
         {
           "name": "Frank Chavez",
           "goal": 4.86,
+          "leads": 11,
           "signed": 3,
           "green": 1,
           "drops": 1,
@@ -307,6 +334,7 @@
         {
           "name": "Natasha Narine",
           "goal": 6.0,
+          "leads": 5,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -318,6 +346,7 @@
         {
           "name": "Alexandra Hughley",
           "goal": 2.0,
+          "leads": 4,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -329,6 +358,7 @@
         {
           "name": "Yrene Palomino Behamonde",
           "goal": 3.333333333333333,
+          "leads": 1,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -340,6 +370,7 @@
         {
           "name": "Leal, David",
           "goal": 1.0,
+          "leads": 0,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -351,6 +382,7 @@
         {
           "name": "Morning, Alamira",
           "goal": 4.0,
+          "leads": 3,
           "signed": 1,
           "green": 0,
           "drops": 1,
@@ -362,6 +394,7 @@
         {
           "name": "Hector Ospina",
           "goal": 3.0,
+          "leads": 0,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -373,6 +406,7 @@
         {
           "name": "Thomas, Terica T",
           "goal": 1.5384615384615383,
+          "leads": 3,
           "signed": 2,
           "green": 0,
           "drops": 2,
@@ -384,6 +418,7 @@
         {
           "name": "Piedrahita, Natalia",
           "goal": 7.2,
+          "leads": 10,
           "signed": 3,
           "green": 0,
           "drops": 2,
@@ -395,6 +430,7 @@
         {
           "name": "Diaz, Zeilin",
           "goal": 1.0,
+          "leads": 1,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -406,6 +442,7 @@
         {
           "name": "Arianna Fregio",
           "goal": 1.0,
+          "leads": 1,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -417,6 +454,7 @@
         {
           "name": "Dagmara Corria Guzman",
           "goal": 3.0,
+          "leads": 1,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -431,6 +469,7 @@
       "code": "SFL-ALR",
       "leader": "Alix Romero",
       "repCount": 20,
+      "leads": 323,
       "signed": 120,
       "goal": 109.82560000000001,
       "goalPct": 93.59384332978831,
@@ -443,6 +482,7 @@
         {
           "name": "Olga Costa Rodriguez",
           "goal": 3.0,
+          "leads": 16,
           "signed": 9,
           "green": 0,
           "drops": 0,
@@ -454,6 +494,7 @@
         {
           "name": "Lainet Naranjo",
           "goal": 5.4,
+          "leads": 19,
           "signed": 9,
           "green": 1,
           "drops": 0,
@@ -465,6 +506,7 @@
         {
           "name": "Fatima J. Palacios Torrez",
           "goal": 6.0,
+          "leads": 44,
           "signed": 20,
           "green": 2,
           "drops": 9,
@@ -476,6 +518,7 @@
         {
           "name": "Alejandra Palomino",
           "goal": 6.0,
+          "leads": 18,
           "signed": 8,
           "green": 1,
           "drops": 0,
@@ -487,6 +530,7 @@
         {
           "name": "Suviely M Brinez Mendez",
           "goal": 6.0,
+          "leads": 17,
           "signed": 8,
           "green": 0,
           "drops": 0,
@@ -498,6 +542,7 @@
         {
           "name": "Jacqueline Hernandez",
           "goal": 12.6,
+          "leads": 31,
           "signed": 21,
           "green": 0,
           "drops": 5,
@@ -509,6 +554,7 @@
         {
           "name": "Anyelina Guillen Romero",
           "goal": 3.0,
+          "leads": 5,
           "signed": 4,
           "green": 0,
           "drops": 0,
@@ -520,6 +566,7 @@
         {
           "name": "Larry Ferrer Bracho",
           "goal": 3.0,
+          "leads": 5,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -531,6 +578,7 @@
         {
           "name": "Maria Parra",
           "goal": 9.72,
+          "leads": 45,
           "signed": 12,
           "green": 3,
           "drops": 2,
@@ -542,6 +590,7 @@
         {
           "name": "Alejandra Coromoto Cubillan Romero",
           "goal": 3.0,
+          "leads": 9,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -553,6 +602,7 @@
         {
           "name": "Alix Romero",
           "goal": 12.0,
+          "leads": 32,
           "signed": 6,
           "green": 0,
           "drops": 0,
@@ -564,6 +614,7 @@
         {
           "name": "Lalesca Castilblanco",
           "goal": 8.64,
+          "leads": 24,
           "signed": 4,
           "green": 1,
           "drops": 0,
@@ -575,6 +626,7 @@
         {
           "name": "Margare Hernandez",
           "goal": 5.0,
+          "leads": 26,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -586,6 +638,7 @@
         {
           "name": "Delmarys Ferrer",
           "goal": 5.4,
+          "leads": 6,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -597,6 +650,7 @@
         {
           "name": "Tania Younes",
           "goal": 4.0,
+          "leads": 6,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -608,6 +662,7 @@
         {
           "name": "Denise Molina",
           "goal": 4.6656,
+          "leads": 8,
           "signed": 2,
           "green": 0,
           "drops": 1,
@@ -619,6 +674,7 @@
         {
           "name": "Gregoria Rincon",
           "goal": 5.4,
+          "leads": 3,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -630,6 +686,7 @@
         {
           "name": "Emilia Gonzalez",
           "goal": 3.0,
+          "leads": 7,
           "signed": 2,
           "green": 0,
           "drops": 1,
@@ -641,6 +698,7 @@
         {
           "name": "Sugey Y Chow Ruiz",
           "goal": 3.0,
+          "leads": 2,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -652,6 +710,7 @@
         {
           "name": "Neira Ortega Leal",
           "goal": 1.0,
+          "leads": 0,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -666,6 +725,7 @@
       "code": "SFL-GAB",
       "leader": "Gaby Chacon",
       "repCount": 20,
+      "leads": 264,
       "signed": 87,
       "goal": 89.8,
       "goalPct": 86.25835189309576,
@@ -678,6 +738,7 @@
         {
           "name": "Everlianny Alicia Ontiveros Medina",
           "goal": 3.0,
+          "leads": 14,
           "signed": 8,
           "green": 2,
           "drops": 0,
@@ -689,6 +750,7 @@
         {
           "name": "Saray Estrada Cassiani",
           "goal": 1.0,
+          "leads": 4,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -700,6 +762,7 @@
         {
           "name": "Lucero Estrada",
           "goal": 10.0,
+          "leads": 47,
           "signed": 16,
           "green": 1,
           "drops": 2,
@@ -711,6 +774,7 @@
         {
           "name": "Quintero, Jorge",
           "goal": 13.0,
+          "leads": 51,
           "signed": 17,
           "green": 1,
           "drops": 2,
@@ -722,6 +786,7 @@
         {
           "name": "Euar Pina",
           "goal": 3.0,
+          "leads": 5,
           "signed": 5,
           "green": 0,
           "drops": 2,
@@ -733,6 +798,7 @@
         {
           "name": "Maria Escobar",
           "goal": 7.0,
+          "leads": 22,
           "signed": 7,
           "green": 0,
           "drops": 0,
@@ -744,6 +810,7 @@
         {
           "name": "Chacon, Maria",
           "goal": 9.0,
+          "leads": 51,
           "signed": 8,
           "green": 1,
           "drops": 0,
@@ -755,6 +822,7 @@
         {
           "name": "Kelly Barillas",
           "goal": 3.0,
+          "leads": 5,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -766,6 +834,7 @@
         {
           "name": "Rafael Perez",
           "goal": 6.3,
+          "leads": 11,
           "signed": 5,
           "green": 2,
           "drops": 0,
@@ -777,6 +846,7 @@
         {
           "name": "Daniela Cuellar",
           "goal": 3.0,
+          "leads": 11,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -788,6 +858,7 @@
         {
           "name": "Raineld J Vega Vargas",
           "goal": 7.0,
+          "leads": 10,
           "signed": 5,
           "green": 0,
           "drops": 1,
@@ -799,6 +870,7 @@
         {
           "name": "Ricsys Vasquez Cabrera",
           "goal": 6.5,
+          "leads": 13,
           "signed": 5,
           "green": 0,
           "drops": 1,
@@ -810,6 +882,7 @@
         {
           "name": "Luis Alfredo Quintero Blanco",
           "goal": 3.0,
+          "leads": 3,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -821,6 +894,7 @@
         {
           "name": "Marena Margarita Sanchez Moreno",
           "goal": 3.0,
+          "leads": 1,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -832,6 +906,7 @@
         {
           "name": "Glenys Julissa Lopez",
           "goal": 3.0,
+          "leads": 3,
           "signed": 1,
           "green": 1,
           "drops": 0,
@@ -843,6 +918,7 @@
         {
           "name": "Linda Orozco",
           "goal": 2.0,
+          "leads": 6,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -854,6 +930,7 @@
         {
           "name": "Isabella Medina Mijares",
           "goal": 2.0,
+          "leads": 2,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -865,6 +942,7 @@
         {
           "name": "Yoannellys C Marin Vasquez",
           "goal": 1.0,
+          "leads": 1,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -876,6 +954,7 @@
         {
           "name": "Maryuri Quiroz Aleman",
           "goal": 2.0,
+          "leads": 3,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -887,6 +966,7 @@
         {
           "name": "Tabatta Tela Sanchez",
           "goal": 2.0,
+          "leads": 1,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -901,6 +981,7 @@
       "code": "SFL-KAT",
       "leader": "Katherine Garcia",
       "repCount": 20,
+      "leads": 324,
       "signed": 129,
       "goal": 105.83571428571429,
       "goalPct": 112.39117230208544,
@@ -913,6 +994,7 @@
         {
           "name": "Eileen Gotera Suarez",
           "goal": 3.0,
+          "leads": 9,
           "signed": 8,
           "green": 0,
           "drops": 1,
@@ -924,6 +1006,7 @@
         {
           "name": "Wilsan V Perez Mata",
           "goal": 3.0,
+          "leads": 11,
           "signed": 8,
           "green": 1,
           "drops": 1,
@@ -935,6 +1018,7 @@
         {
           "name": "Marianny Yanez",
           "goal": 6.0,
+          "leads": 19,
           "signed": 12,
           "green": 0,
           "drops": 2,
@@ -946,6 +1030,7 @@
         {
           "name": "Jennyffer Suarez Urdaneta",
           "goal": 8.0,
+          "leads": 28,
           "signed": 14,
           "green": 0,
           "drops": 0,
@@ -957,6 +1042,7 @@
         {
           "name": "Eyleen Mendoza",
           "goal": 3.0,
+          "leads": 13,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -968,6 +1054,7 @@
         {
           "name": "Marianella Valera",
           "goal": 3.0,
+          "leads": 17,
           "signed": 4,
           "green": 0,
           "drops": 0,
@@ -979,6 +1066,7 @@
         {
           "name": "Lydia Adam",
           "goal": 3.0,
+          "leads": 23,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -990,6 +1078,7 @@
         {
           "name": "Astrid Sanchez",
           "goal": 6.0,
+          "leads": 12,
           "signed": 5,
           "green": 1,
           "drops": 0,
@@ -1001,6 +1090,7 @@
         {
           "name": "Oscar Manuel Gutierrez",
           "goal": 7.2,
+          "leads": 20,
           "signed": 9,
           "green": 0,
           "drops": 1,
@@ -1012,6 +1102,7 @@
         {
           "name": "Fernanda J Loaisiga",
           "goal": 14.0,
+          "leads": 39,
           "signed": 17,
           "green": 1,
           "drops": 0,
@@ -1023,6 +1114,7 @@
         {
           "name": "Milagros Perez",
           "goal": 8.035714285714286,
+          "leads": 29,
           "signed": 9,
           "green": 0,
           "drops": 0,
@@ -1034,6 +1126,7 @@
         {
           "name": "Garcia, Katerine",
           "goal": 15.0,
+          "leads": 47,
           "signed": 18,
           "green": 0,
           "drops": 1,
@@ -1045,6 +1138,7 @@
         {
           "name": "Maria De Aguiar",
           "goal": 2.0,
+          "leads": 9,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -1056,6 +1150,7 @@
         {
           "name": "Ivania Lares",
           "goal": 3.0,
+          "leads": 6,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -1067,6 +1162,7 @@
         {
           "name": "Jezayf Victoria Fuenmayor Romero",
           "goal": 3.0,
+          "leads": 5,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -1078,6 +1174,7 @@
         {
           "name": "Cristina Lares",
           "goal": 8.6,
+          "leads": 25,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -1089,6 +1186,7 @@
         {
           "name": "Robin Rodas Gomez",
           "goal": 3.0,
+          "leads": 4,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1100,6 +1198,7 @@
         {
           "name": "Cindy A. Lara Gutierrez",
           "goal": 2.0,
+          "leads": 3,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1111,6 +1210,7 @@
         {
           "name": "Ana Maria Peralta",
           "goal": 2.0,
+          "leads": 0,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1122,6 +1222,7 @@
         {
           "name": " Ivette Caro Valdez",
           "goal": 3.0,
+          "leads": 5,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1136,6 +1237,7 @@
       "code": "SFL-KPS",
       "leader": "Karla Porras",
       "repCount": 27,
+      "leads": 599,
       "signed": 156,
       "goal": 173.99263157894737,
       "goalPct": 76.68715553592712,
@@ -1148,6 +1250,7 @@
         {
           "name": "Adriana Valderrama",
           "goal": 1.0,
+          "leads": 7,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -1159,6 +1262,7 @@
         {
           "name": "Yenislay Hernandez Arteaga",
           "goal": 6.0,
+          "leads": 16,
           "signed": 10,
           "green": 0,
           "drops": 3,
@@ -1170,6 +1274,7 @@
         {
           "name": "Barbara Sanchez",
           "goal": 10.0,
+          "leads": 21,
           "signed": 13,
           "green": 1,
           "drops": 0,
@@ -1181,6 +1286,7 @@
         {
           "name": "Bella Maldonado",
           "goal": 8.64,
+          "leads": 19,
           "signed": 9,
           "green": 1,
           "drops": 0,
@@ -1192,6 +1298,7 @@
         {
           "name": "Marisol Tabares",
           "goal": 17.1,
+          "leads": 134,
           "signed": 19,
           "green": 0,
           "drops": 2,
@@ -1203,6 +1310,7 @@
         {
           "name": "Siddals Guerra",
           "goal": 6.0,
+          "leads": 21,
           "signed": 9,
           "green": 0,
           "drops": 1,
@@ -1214,6 +1322,7 @@
         {
           "name": "Carlos Faria Tenerelli",
           "goal": 10.0,
+          "leads": 46,
           "signed": 9,
           "green": 1,
           "drops": 0,
@@ -1225,6 +1334,7 @@
         {
           "name": "Dayana Castellano",
           "goal": 5.4,
+          "leads": 16,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -1236,6 +1346,7 @@
         {
           "name": "Katherine Grisel Ferrer Cubero",
           "goal": 12.0,
+          "leads": 49,
           "signed": 15,
           "green": 1,
           "drops": 2,
@@ -1247,6 +1358,7 @@
         {
           "name": "Porras, Karla",
           "goal": 21.05263157894737,
+          "leads": 77,
           "signed": 20,
           "green": 2,
           "drops": 2,
@@ -1258,6 +1370,7 @@
         {
           "name": "Karina Rosario Inman",
           "goal": 9.6,
+          "leads": 18,
           "signed": 8,
           "green": 1,
           "drops": 1,
@@ -1269,6 +1382,7 @@
         {
           "name": "Alejandra Rivero",
           "goal": 5.4,
+          "leads": 9,
           "signed": 4,
           "green": 0,
           "drops": 0,
@@ -1280,6 +1394,7 @@
         {
           "name": "Leonardo Torres",
           "goal": 6.0,
+          "leads": 15,
           "signed": 5,
           "green": 1,
           "drops": 0,
@@ -1291,6 +1406,7 @@
         {
           "name": "Patricia Mora",
           "goal": 3.0,
+          "leads": 13,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -1302,6 +1418,7 @@
         {
           "name": "Yelimar Ochoa Delgado",
           "goal": 3.0,
+          "leads": 13,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -1313,6 +1430,7 @@
         {
           "name": "Dayaneth Negrete",
           "goal": 6.0,
+          "leads": 18,
           "signed": 3,
           "green": 0,
           "drops": 0,
@@ -1324,6 +1442,7 @@
         {
           "name": "Paola Pena Gomez",
           "goal": 3.0,
+          "leads": 5,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1335,6 +1454,7 @@
         {
           "name": "Yeanna Suarez",
           "goal": 10.8,
+          "leads": 31,
           "signed": 5,
           "green": 1,
           "drops": 1,
@@ -1346,6 +1466,7 @@
         {
           "name": "Ritzzi Arroyo",
           "goal": 10.0,
+          "leads": 31,
           "signed": 5,
           "green": 1,
           "drops": 2,
@@ -1357,6 +1478,7 @@
         {
           "name": "Dayana Batista Rodriguez",
           "goal": 4.0,
+          "leads": 9,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -1368,6 +1490,7 @@
         {
           "name": "Raul Cuberos Ramirez",
           "goal": 3.0,
+          "leads": 11,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1379,6 +1502,7 @@
         {
           "name": "Luis Mercado",
           "goal": 3.0,
+          "leads": 3,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1390,6 +1514,7 @@
         {
           "name": "Joyce Amaris",
           "goal": 3.0,
+          "leads": 3,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1401,6 +1526,7 @@
         {
           "name": "Katia Louit",
           "goal": 1.0,
+          "leads": 1,
           "signed": 1,
           "green": 0,
           "drops": 1,
@@ -1412,6 +1538,7 @@
         {
           "name": "Yudeiky Aguila Golan",
           "goal": 2.0,
+          "leads": 6,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1423,6 +1550,7 @@
         {
           "name": "Cristhiam F Ulloa",
           "goal": 3.0,
+          "leads": 4,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1434,6 +1562,7 @@
         {
           "name": "Susana Sabugo Friman",
           "goal": 1.0,
+          "leads": 3,
           "signed": 1,
           "green": 0,
           "drops": 1,
@@ -1448,6 +1577,7 @@
       "code": "SFL-TPA",
       "leader": "Tony Press",
       "repCount": 25,
+      "leads": 820,
       "signed": 224,
       "goal": 180.52,
       "goalPct": 105.27919344116997,
@@ -1460,6 +1590,7 @@
         {
           "name": "Jordis Rodriguez Alvarez",
           "goal": 3.0,
+          "leads": 25,
           "signed": 10,
           "green": 0,
           "drops": 0,
@@ -1471,6 +1602,7 @@
         {
           "name": "Carolina Santamaria Silvestre",
           "goal": 3.0,
+          "leads": 11,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -1482,6 +1614,7 @@
         {
           "name": "Diana Paola Guzman Corredor",
           "goal": 3.0,
+          "leads": 7,
           "signed": 3,
           "green": 3,
           "drops": 0,
@@ -1493,6 +1626,7 @@
         {
           "name": "Tony Press Accidente Inc",
           "goal": 64.0,
+          "leads": 430,
           "signed": 112,
           "green": 1,
           "drops": 8,
@@ -1504,6 +1638,7 @@
         {
           "name": "Wilson Radames Almanzar Ramos",
           "goal": 3.0,
+          "leads": 6,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -1515,6 +1650,7 @@
         {
           "name": "Paola Patricia Lopez",
           "goal": 6.0,
+          "leads": 22,
           "signed": 5,
           "green": 0,
           "drops": 0,
@@ -1526,6 +1662,7 @@
         {
           "name": "Nur Huneidi",
           "goal": 1.0,
+          "leads": 2,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1537,6 +1674,7 @@
         {
           "name": "Maria Alexandra Moya",
           "goal": 2.0,
+          "leads": 7,
           "signed": 2,
           "green": 0,
           "drops": 0,
@@ -1548,6 +1686,7 @@
         {
           "name": "Sheila Valero",
           "goal": 6.0,
+          "leads": 10,
           "signed": 6,
           "green": 0,
           "drops": 1,
@@ -1559,6 +1698,7 @@
         {
           "name": "Geissell Sandino Prado",
           "goal": 6.0,
+          "leads": 24,
           "signed": 6,
           "green": 0,
           "drops": 1,
@@ -1570,6 +1710,7 @@
         {
           "name": "Lopez, Olga",
           "goal": 13.14,
+          "leads": 28,
           "signed": 13,
           "green": 5,
           "drops": 1,
@@ -1581,6 +1722,7 @@
         {
           "name": "Kimberly Castillo",
           "goal": 3.0,
+          "leads": 4,
           "signed": 2,
           "green": 1,
           "drops": 0,
@@ -1592,6 +1734,7 @@
         {
           "name": "Bayona, Gianina",
           "goal": 15.0,
+          "leads": 84,
           "signed": 14,
           "green": 3,
           "drops": 1,
@@ -1603,6 +1746,7 @@
         {
           "name": "Munoz, Renato E",
           "goal": 11.0,
+          "leads": 34,
           "signed": 10,
           "green": 2,
           "drops": 0,
@@ -1614,6 +1758,7 @@
         {
           "name": "Delgado, Andrea",
           "goal": 11.28,
+          "leads": 52,
           "signed": 14,
           "green": 0,
           "drops": 3,
@@ -1625,6 +1770,7 @@
         {
           "name": "Rose Esther Barthelemy Jimenez",
           "goal": 2.0,
+          "leads": 6,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1636,6 +1782,7 @@
         {
           "name": "Sebastian Ochoa",
           "goal": 8.1,
+          "leads": 35,
           "signed": 8,
           "green": 0,
           "drops": 3,
@@ -1647,6 +1794,7 @@
         {
           "name": "Valeria Rodriguez Torres",
           "goal": 3.0,
+          "leads": 5,
           "signed": 2,
           "green": 0,
           "drops": 1,
@@ -1658,6 +1806,7 @@
         {
           "name": "Anyelis Castell Borroto",
           "goal": 3.0,
+          "leads": 2,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1669,6 +1818,7 @@
         {
           "name": "Amelia Fiallo Borroto",
           "goal": 3.0,
+          "leads": 8,
           "signed": 2,
           "green": 0,
           "drops": 1,
@@ -1680,6 +1830,7 @@
         {
           "name": "Zelma Fernandez Velazquez",
           "goal": 4.0,
+          "leads": 3,
           "signed": 1,
           "green": 0,
           "drops": 0,
@@ -1691,6 +1842,7 @@
         {
           "name": "Cutolo, Carlos",
           "goal": 2.0,
+          "leads": 5,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1702,6 +1854,7 @@
         {
           "name": "Barbara Aroche Ricardo",
           "goal": 0.0,
+          "leads": 3,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1713,6 +1866,7 @@
         {
           "name": "Yanismeidis Barthelemy ",
           "goal": 2.0,
+          "leads": 2,
           "signed": 0,
           "green": 0,
           "drops": 0,
@@ -1724,6 +1878,7 @@
         {
           "name": "Anabel Molina",
           "goal": 3.0,
+          "leads": 5,
           "signed": 0,
           "green": 0,
           "drops": 0,

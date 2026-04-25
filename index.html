@@ -194,11 +194,11 @@
             <h3 id="repTableTitle">Rep Performance</h3>
             <div class="rep-header">
                 <div>Rep</div>
+                <div>Leads</div>
                 <div>Signed</div>
-                <div>Goal</div>
-                <div>% Goal</div>
-                <div class="hide-mobile">Green%</div>
-                <div class="hide-mobile">Drop%</div>
+                <div>CV</div>
+                <div>Drops</div>
+                <div class="hide-mobile">% Goal</div>
             </div>
             <div id="repRows"></div>
         </div>
@@ -307,11 +307,11 @@
                 return `
                     <div class="rep-row">
                         <div class="name">${rep.name}${flag}</div>
+                        <div>${rep.leads || 0}</div>
                         <div>${rep.signed}</div>
-                        <div>${rep.goal.toFixed(0)}</div>
-                        <div class="goal-pct ${goalClass}">${rep.goalPct.toFixed(0)}%</div>
-                        <div class="green-rate hide-mobile">${rep.greenPct.toFixed(1)}%</div>
-                        <div class="drop-rate hide-mobile">${rep.dropPct.toFixed(1)}%</div>
+                        <div>${rep.cv.toFixed(1)}</div>
+                        <div class="drop-rate">${rep.drops}</div>
+                        <div class="goal-pct ${goalClass} hide-mobile">${rep.goalPct.toFixed(0)}%</div>
                     </div>
                 `;
             }).join('');
