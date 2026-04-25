@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pod Performance Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #000; 
+            color: #fff; 
+            min-height: 100vh; 
+            padding: 12px;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .header h1 { font-size: 20px; font-weight: 700; }
+        .header .subtitle { font-size: 12px; color: #888; }
+        .header .updated { font-size: 11px; color: #666; }
+        
+        .pod-selector {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .pod-btn {
+            padding: 8px 14px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #888;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .pod-btn:hover { background: #2a2a2a; color: #fff; }
+        .pod-btn.active { background: #5BA4B5; border-color: #5BA4B5; color: #fff; }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card .value { font-size: 24px; font-weight: 700; color: #5BA4B5; }
+        .card .value.green { color: #4ade80; }
+        .card .value.red { color: #ef4444; }
+        .card .value.yellow { color: #fbbf24; }
+        .card .label { font-size: 10px; color: #888; text-transform: uppercase; margin-top: 4px; }
+        
+        .comparison {
+            background: #1a1a1a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        .comparison h3 { font-size: 12px; color: #888; margin-bottom: 10px; text-transform: uppercase; }
+        .comparison-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #333;
+            font-size: 13px;
+        }
+        .comparison-row:last-child { border-bottom: none; }
+        .comparison-row .pod-name { color: #fff; }
+        .comparison-row .pod-stats { color: #888; }
+        .comparison-row.current { background: #5BA4B522; margin: 0 -12px; padding: 8px 12px; }
+        .comparison-row .rank { 
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #333;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 11px;
+            margin-right: 8px;
+        }
+        .comparison-row.current .rank { background: #5BA4B5; }
+        
+        .rep-table {
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .rep-table h3 { 
+            font-size: 12px; 
+            color: #888; 
+            text-transform: uppercase; 
+            padding: 12px;
+            border-bottom: 1px solid #333;
+        }
+        .rep-header, .rep-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px 12px;
+            font-size: 12px;
+            align-items: center;
+        }
+        .rep-header {
+            background: #111;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        .rep-row { border-bottom: 1px solid #222; }
+        .rep-row:last-child { border-bottom: none; }
+        .rep-row:hover { background: #222; }
+        .rep-row .name { font-weight: 500; }
+        .rep-row .goal-pct { font-weight: 600; }
+        .rep-row .goal-pct.on-track { color: #4ade80; }
+        .rep-row .goal-pct.behind { color: #fbbf24; }
+        .rep-row .goal-pct.critical { color: #ef4444; }
+        .rep-row .green-rate { color: #4ade80; }
+        .rep-row .drop-rate { color: #ef4444; }
+        
+        .flag { 
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+        .flag.top { background: #4ade8033; color: #4ade80; }
+        .flag.alert { background: #ef444433; color: #ef4444; }
+        
+        .legend {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 16px;
+            font-size: 11px;
+            color: #666;
+        }
+        .legend span { display: flex; align-items: center; gap: 4px; }
+        .legend .dot { width: 8px; height: 8px; border-radius: 50%; }
+        .legend .dot.green { background: #4ade80; }
+        .legend .dot.yellow { background: #fbbf24; }
+        .legend .dot.red { background: #ef4444; }
+        
+        @media (max-width: 600px) {
+            .rep-header, .rep-row {
+                grid-template-columns: 1.5fr 1fr 1fr 1fr;
+                font-size: 11px;
+            }
+            .rep-header .hide-mobile, .rep-row .hide-mobile { display: none; }
+            .summary-cards { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 id="podTitle">SFL Pod Performance</h1>
+                <div class="subtitle">April 2026 MTD</div>
+            </div>
+            <div class="updated" id="lastUpdated">Loading...</div>
+        </div>
+        
+        <div class="pod-selector" id="podSelector"></div>
+        
+        <div class="summary-cards" id="summaryCards"></div>
+        
+        <div class="comparison" id="comparisonSection">
+            <h3>SFL Pod Rankings — % to Goal</h3>
+            <div id="comparisonRows"></div>
+        </div>
+        
+        <div class="rep-table">
+            <h3 id="repTableTitle">Rep Performance</h3>
+            <div class="rep-header">
+                <div>Rep</div>
+                <div>Signed</div>
+                <div>Goal</div>
+                <div>% Goal</div>
+                <div class="hide-mobile">Green%</div>
+                <div class="hide-mobile">Drop%</div>
+            </div>
+            <div id="repRows"></div>
+        </div>
+        
+        <div class="legend">
+            <span><div class="dot green"></div> On Track (≥83%)</span>
+            <span><div class="dot yellow"></div> Behind (50-82%)</span>
+            <span><div class="dot red"></div> Critical (&lt;50%)</span>
+        </div>
+    </div>
+    
+    <script>
+        const SUPABASE_URL = 'https://ymhhdipaplhzxpfhrunp.supabase.co';
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltaGhkaXBhcGxoenhwZmhydW5wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI2OTQ2MjAsImV4cCI6MjA1ODI3MDYyMH0.0otOs7CRSO8VLNwDAhHivkNBwdls4hBCvJ_5rGTYoFo';
+        
+        const SFL_PODS = {
+            'SFL': 'Willie Gerardo',
+            'SFL-ALR': 'Alix Romero',
+            'SFL-GAB': 'Gaby Chacon',
+            'SFL-KAT': 'Katherine Garcia',
+            'SFL-KPS': 'Karla Porras',
+            'SFL-TPA': 'Tony Press'
+        };
+        
+        let currentPod = 'SFL';
+        let allPodData = {};
+        let allRepData = {};
+        
+        async function supabase(endpoint) {
+            const res = await fetch(`${SUPABASE_URL}/rest/v1/${endpoint}`, {
+                headers: {
+                    'apikey': SUPABASE_KEY,
+                    'Authorization': `Bearer ${SUPABASE_KEY}`
+                }
+            });
+            return res.json();
+        }
+        
+        async function fetchData() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const startDate = `${year}-${month}-01`;
+            const endDate = `${year}-${String(today.getMonth() + 2).padStart(2, '0')}-01`;
+            const dayOfMonth = today.getDate();
+            const daysInMonth = new Date(year, today.getMonth() + 1, 0).getDate();
+            const paceThreshold = (dayOfMonth / daysInMonth) * 100;
+            
+            // Fetch all data
+            for (const pod of Object.keys(SFL_PODS)) {
+                // Get employees
+                const employees = await supabase(`employees?office=eq.${pod}&hrStatus=eq.Active&select=name,DealGoal,DealGoalCustom,email`);
+                
+                // Get rep_logs for this pod
+                const cases = await supabase(`rep_logs?officelabel=eq.${pod}&idot=gte.${startDate}&idot=lt.${endDate}&submittername=neq.Katiria%20Bonilla&select=submittername,ColorTag,convertedvalue`);
+                
+                // Calculate pod totals
+                let totalSigned = cases.length;
+                let totalGreen = cases.filter(c => c.ColorTag === 'Green').length;
+                let totalDrops = cases.filter(c => c.ColorTag === 'Red').length;
+                let totalCV = cases.reduce((sum, c) => sum + (parseFloat(c.convertedvalue) || 0), 0);
+                let totalGoal = employees.reduce((sum, e) => sum + (parseFloat(e.DealGoalCustom || e.DealGoal) || 0), 0);
+                
+                allPodData[pod] = {
+                    leader: SFL_PODS[pod],
+                    reps: employees.length,
+                    signed: totalSigned,
+                    goal: totalGoal,
+                    goalPct: totalGoal > 0 ? (totalSigned / totalGoal * 100) : 0,
+                    green: totalGreen,
+                    greenPct: totalSigned > 0 ? (totalGreen / totalSigned * 100) : 0,
+                    drops: totalDrops,
+                    dropPct: totalSigned > 0 ? (totalDrops / totalSigned * 100) : 0,
+                    cv: totalCV
+                };
+                
+                // Calculate per-rep stats
+                const repStats = {};
+                for (const emp of employees) {
+                    const goal = parseFloat(emp.DealGoalCustom || emp.DealGoal) || 0;
+                    repStats[emp.name] = { 
+                        name: emp.name, 
+                        goal: goal,
+                        signed: 0, 
+                        green: 0, 
+                        drops: 0,
+                        cv: 0
+                    };
+                }
+                
+                for (const c of cases) {
+                    const name = c.submittername;
+                    // Try to match to employee
+                    for (const empName of Object.keys(repStats)) {
+                        if (empName.toLowerCase().includes(name.split(',')[0].toLowerCase().trim()) ||
+                            name.toLowerCase().includes(empName.split(' ')[0].toLowerCase())) {
+                            repStats[empName].signed++;
+                            repStats[empName].cv += parseFloat(c.convertedvalue) || 0;
+                            if (c.ColorTag === 'Green') repStats[empName].green++;
+                            if (c.ColorTag === 'Red') repStats[empName].drops++;
+                            break;
+                        }
+                    }
+                }
+                
+                allRepData[pod] = Object.values(repStats).map(r => ({
+                    ...r,
+                    goalPct: r.goal > 0 ? (r.signed / r.goal * 100) : 0,
+                    greenPct: r.signed > 0 ? (r.green / r.signed * 100) : 0,
+                    dropPct: r.signed > 0 ? (r.drops / r.signed * 100) : 0
+                })).sort((a, b) => b.goalPct - a.goalPct);
+            }
+            
+            document.getElementById('lastUpdated').textContent = `Updated: ${new Date().toLocaleString()}`;
+            
+            renderPodSelector();
+            renderDashboard(paceThreshold);
+        }
+        
+        function renderPodSelector() {
+            const container = document.getElementById('podSelector');
+            container.innerHTML = Object.entries(SFL_PODS).map(([code, leader]) => 
+                `<button class="pod-btn ${code === currentPod ? 'active' : ''}" data-pod="${code}">${leader}</button>`
+            ).join('');
+            
+            container.querySelectorAll('.pod-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentPod = btn.dataset.pod;
+                    container.querySelectorAll('.pod-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderDashboard(83); // Approximate pace threshold
+                });
+            });
+        }
+        
+        function renderDashboard(paceThreshold) {
+            const pod = allPodData[currentPod];
+            const reps = allRepData[currentPod] || [];
+            
+            document.getElementById('podTitle').textContent = `${SFL_PODS[currentPod]}'s Pod (${currentPod})`;
+            document.getElementById('repTableTitle').textContent = `Rep Performance — ${reps.length} Reps`;
+            
+            // Summary cards
+            const goalClass = pod.goalPct >= paceThreshold ? 'green' : pod.goalPct >= 50 ? 'yellow' : 'red';
+            document.getElementById('summaryCards').innerHTML = `
+                <div class="card">
+                    <div class="value">${pod.signed}</div>
+                    <div class="label">Signed</div>
+                </div>
+                <div class="card">
+                    <div class="value">${Math.round(pod.goal)}</div>
+                    <div class="label">Goal</div>
+                </div>
+                <div class="card">
+                    <div class="value ${goalClass}">${pod.goalPct.toFixed(0)}%</div>
+                    <div class="label">% to Goal</div>
+                </div>
+                <div class="card">
+                    <div class="value green">${pod.greenPct.toFixed(1)}%</div>
+                    <div class="label">Green Rate</div>
+                </div>
+                <div class="card">
+                    <div class="value red">${pod.dropPct.toFixed(1)}%</div>
+                    <div class="label">Drop Rate</div>
+                </div>
+                <div class="card">
+                    <div class="value">${Math.round(pod.cv)}</div>
+                    <div class="label">CV</div>
+                </div>
+            `;
+            
+            // Pod comparison
+            const sortedPods = Object.entries(allPodData)
+                .sort((a, b) => b[1].goalPct - a[1].goalPct);
+            
+            document.getElementById('comparisonRows').innerHTML = sortedPods.map(([code, data], i) => `
+                <div class="comparison-row ${code === currentPod ? 'current' : ''}">
+                    <div>
+                        <span class="rank">${i + 1}</span>
+                        <span class="pod-name">${data.leader}</span>
+                    </div>
+                    <div class="pod-stats">${data.goalPct.toFixed(0)}% · ${data.signed}/${Math.round(data.goal)} · ${data.greenPct.toFixed(1)}% green</div>
+                </div>
+            `).join('');
+            
+            // Rep table
+            const topRep = reps[0];
+            const bottomReps = reps.filter(r => r.goalPct < 50 && r.goal > 0);
+            
+            document.getElementById('repRows').innerHTML = reps.map(rep => {
+                const goalClass = rep.goalPct >= paceThreshold ? 'on-track' : rep.goalPct >= 50 ? 'behind' : 'critical';
+                let flag = '';
+                if (rep === topRep && rep.goalPct > 0) flag = '<span class="flag top">TOP</span>';
+                else if (rep.goalPct < 50 && rep.goal > 0) flag = '<span class="flag alert">!</span>';
+                
+                return `
+                    <div class="rep-row">
+                        <div class="name">${rep.name}${flag}</div>
+                        <div>${rep.signed}</div>
+                        <div>${rep.goal.toFixed(0)}</div>
+                        <div class="goal-pct ${goalClass}">${rep.goalPct.toFixed(0)}%</div>
+                        <div class="green-rate hide-mobile">${rep.greenPct.toFixed(1)}%</div>
+                        <div class="drop-rate hide-mobile">${rep.dropPct.toFixed(1)}%</div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        fetchData();
+        setInterval(fetchData, 5 * 60 * 1000); // Refresh every 5 minutes
+    </script>
+</body>
+</html>
