@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willie Gerardo - Pod Performance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #000; 
+            color: #fff; 
+            min-height: 100vh; 
+            padding: 12px;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .header h1 { font-size: 20px; font-weight: 700; }
+        .header .subtitle { font-size: 12px; color: #888; }
+        .header .updated { font-size: 11px; color: #666; }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card .value { font-size: 24px; font-weight: 700; color: #5BA4B5; }
+        .card .value.green { color: #4ade80; }
+        .card .value.red { color: #ef4444; }
+        .card .label { font-size: 10px; color: #888; text-transform: uppercase; margin-top: 4px; }
+        
+        .rep-table {
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .rep-table h3 { 
+            font-size: 12px; 
+            color: #888; 
+            text-transform: uppercase; 
+            padding: 12px;
+            border-bottom: 1px solid #333;
+        }
+        .rep-header, .rep-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px 12px;
+            font-size: 12px;
+            align-items: center;
+        }
+        .rep-header {
+            background: #111;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        .rep-row { border-bottom: 1px solid #222; }
+        .rep-row:last-child { border-bottom: none; }
+        .rep-row:hover { background: #222; }
+        .rep-row .name { font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .rep-row .goal-pct { font-weight: 600; }
+        .rep-row .goal-pct.on-track { color: #4ade80; }
+        .rep-row .goal-pct.critical { color: #ef4444; }
+        .rep-row .green-rate { color: #4ade80; }
+        .rep-row .drop-rate { color: #ef4444; }
+        
+        .flag { 
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+        .flag.top { background: #4ade8033; color: #4ade80; }
+        .flag.alert { background: #ef444433; color: #ef4444; }
+        
+        .legend {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 16px;
+            font-size: 11px;
+            color: #666;
+        }
+        .legend span { display: flex; align-items: center; gap: 4px; }
+        .legend .dot { width: 8px; height: 8px; border-radius: 50%; }
+        .legend .dot.green { background: #4ade80; }
+        .legend .dot.red { background: #ef4444; }
+        
+        @media (max-width: 600px) {
+            .rep-header, .rep-row {
+                grid-template-columns: 1.5fr 1fr 1fr 1fr;
+                font-size: 11px;
+                padding: 8px 10px;
+            }
+            .rep-header .hide-mobile, .rep-row .hide-mobile { display: none; }
+            .card .value { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Willie Gerardo's Pod</h1>
+                <div class="subtitle" id="monthLabel"></div>
+            </div>
+            <div class="updated" id="lastUpdated"></div>
+        </div>
+        
+        <div class="summary-cards" id="summaryCards"></div>
+        
+        <div class="rep-table">
+            <h3 id="repTableTitle">Rep Performance</h3>
+            <div class="rep-header">
+                <div>Rep</div>
+                <div>Signed</div>
+                <div>Goal</div>
+                <div>% Goal</div>
+                <div class="hide-mobile">Green%</div>
+                <div class="hide-mobile">Drop%</div>
+            </div>
+            <div id="repRows"></div>
+        </div>
+        
+        <div class="legend">
+            <span><div class="dot green"></div> Crushing It (≥140%)</span>
+            <span><div class="dot red"></div> Behind Pace</span>
+        </div>
+    </div>
+    
+    <script>
+        async function fetchData() {
+            try {
+                const res = await fetch('data.json?' + Date.now());
+                const data = await res.json();
+                const pod = data.pods['SFL'];
+                const paceThreshold = data.paceThreshold || 83;
+                
+                document.getElementById('monthLabel').textContent = `${data.month} MTD (Day ${data.day})`;
+                document.getElementById('lastUpdated').textContent = `Updated: ${new Date(data.updated).toLocaleString()}`;
+                document.getElementById('repTableTitle').textContent = `Rep Performance — ${pod.repCount} Reps`;
+                
+                // Summary cards
+                const goalClass = pod.goalPct >= 140 ? 'green' : pod.goalPct >= paceThreshold ? '' : 'red';
+                document.getElementById('summaryCards').innerHTML = `
+                    <div class="card">
+                        <div class="value">${pod.signed}</div>
+                        <div class="label">Signed</div>
+                    </div>
+                    <div class="card">
+                        <div class="value">${Math.round(pod.goal)}</div>
+                        <div class="label">Goal</div>
+                    </div>
+                    <div class="card">
+                        <div class="value ${goalClass}">${pod.goalPct.toFixed(0)}%</div>
+                        <div class="label">% to Goal</div>
+                    </div>
+                    <div class="card">
+                        <div class="value green">${pod.greenPct.toFixed(1)}%</div>
+                        <div class="label">Green Rate</div>
+                    </div>
+                    <div class="card">
+                        <div class="value red">${pod.dropPct.toFixed(1)}%</div>
+                        <div class="label">Drop Rate</div>
+                    </div>
+                    <div class="card">
+                        <div class="value">${Math.round(pod.cv)}</div>
+                        <div class="label">CV</div>
+                    </div>
+                `;
+                
+                // Rep table
+                const reps = pod.reps || [];
+                
+                document.getElementById('repRows').innerHTML = reps.map((rep, i) => {
+                    const goalClass = rep.goalPct >= 140 ? 'on-track' : rep.goalPct >= paceThreshold ? '' : 'critical';
+                    let flag = '';
+                    if (i === 0 && rep.goalPct > 0) flag = '<span class="flag top">TOP</span>';
+                    else if (rep.goalPct < paceThreshold && rep.goal > 0) flag = '<span class="flag alert">!</span>';
+                    
+                    return `
+                        <div class="rep-row">
+                            <div class="name">${rep.name}${flag}</div>
+                            <div>${rep.signed}</div>
+                            <div>${rep.goal.toFixed(0)}</div>
+                            <div class="goal-pct ${goalClass}">${rep.goalPct.toFixed(0)}%</div>
+                            <div class="green-rate hide-mobile">${rep.greenPct.toFixed(1)}%</div>
+                            <div class="drop-rate hide-mobile">${rep.dropPct.toFixed(1)}%</div>
+                        </div>
+                    `;
+                }).join('');
+            } catch (e) {
+                console.error(e);
+            }
+        }
+        
+        fetchData();
+    </script>
+</body>
+</html>
