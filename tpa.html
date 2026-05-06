@@ -258,9 +258,9 @@
                                 </div>
                             </div>
                             <div class="rep-list">
-                                ${topReps.map(r => `
+                                ${topReps.map((r, i) => `
                                     <div class="rep-item">
-                                        <div class="name">${r.name}</div>
+                                        <div class="name">${i + 1}. ${r.name}</div>
                                         <div class="stats">
                                             <span class="signed">${r.signed}</span>
                                             <span class="cv">${r.cv.toFixed(1)} CV</span>
@@ -282,9 +282,9 @@
                 allReps.sort((a, b) => b.signed - a.signed);
                 
                 document.getElementById('allRepsTitle').textContent = `All TPA Reps — ${allReps.length} Total`;
-                document.getElementById('allRepRows').innerHTML = allReps.slice(0, 30).map(r => `
+                document.getElementById('allRepRows').innerHTML = allReps.slice(0, 30).map((r, i) => `
                     <div class="rep-row">
-                        <div class="name">${r.name}</div>
+                        <div class="name">${i + 1}. ${r.name}</div>
                         <div class="office">${r.office.replace('SFL-', '')}</div>
                         <div>${r.signed}</div>
                         <div>${r.cv.toFixed(1)}</div>
