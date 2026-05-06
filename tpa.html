@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPA (Tony Press Ops) - Performance Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #000; 
+            color: #fff; 
+            min-height: 100vh; 
+            padding: 12px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .header h1 { font-size: 20px; font-weight: 700; }
+        .header .subtitle { font-size: 12px; color: #888; }
+        .header .updated { font-size: 11px; color: #666; }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card .value { font-size: 24px; font-weight: 700; color: #5BA4B5; }
+        .card .value.green { color: #4ade80; }
+        .card .value.red { color: #ef4444; }
+        .card .label { font-size: 10px; color: #888; text-transform: uppercase; margin-top: 4px; }
+        
+        .office-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .office-card {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 14px;
+        }
+        .office-card h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .office-card h3 .badge {
+            font-size: 10px;
+            background: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .office-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .office-stat {
+            text-align: center;
+        }
+        .office-stat .val { font-size: 18px; font-weight: 600; }
+        .office-stat .val.green { color: #4ade80; }
+        .office-stat .lbl { font-size: 9px; color: #666; text-transform: uppercase; }
+        
+        .rep-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .rep-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px solid #222;
+            font-size: 12px;
+        }
+        .rep-item:last-child { border-bottom: none; }
+        .rep-item .name { 
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 8px;
+        }
+        .rep-item .stats {
+            display: flex;
+            gap: 12px;
+            color: #888;
+        }
+        .rep-item .stats .signed { color: #fff; font-weight: 500; }
+        .rep-item .stats .cv { color: #5BA4B5; }
+        
+        .all-reps {
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .all-reps h3 {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            padding: 12px;
+            border-bottom: 1px solid #333;
+        }
+        .rep-header, .rep-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px 12px;
+            font-size: 12px;
+            align-items: center;
+        }
+        .rep-header {
+            background: #111;
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        .rep-row { border-bottom: 1px solid #222; }
+        .rep-row:last-child { border-bottom: none; }
+        .rep-row:hover { background: #222; }
+        .rep-row .name { font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .rep-row .office { color: #666; font-size: 10px; }
+        .rep-row .green { color: #4ade80; }
+        .rep-row .drops { color: #ef4444; }
+        
+        .legend {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 16px;
+            font-size: 11px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .summary-cards { grid-template-columns: repeat(2, 1fr); }
+            .office-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>TPA — Tony Press Ops</h1>
+                <div class="subtitle" id="monthLabel">Loading...</div>
+            </div>
+            <div class="updated" id="lastUpdated"></div>
+        </div>
+        
+        <div class="summary-cards" id="summaryCards"></div>
+        
+        <div class="office-grid" id="officeGrid"></div>
+        
+        <div class="all-reps">
+            <h3 id="allRepsTitle">All TPA Reps</h3>
+            <div class="rep-header">
+                <div>Rep</div>
+                <div>Office</div>
+                <div>Signed</div>
+                <div>CV</div>
+                <div>Green</div>
+                <div>Drops</div>
+            </div>
+            <div id="allRepRows"></div>
+        </div>
+        
+        <div class="legend">
+            <span>SFL-TPA • SFL-KPS • SFL-ALR • SFL-KAT • SFL-GAB</span>
+        </div>
+    </div>
+    
+    <script>
+        async function fetchData() {
+            try {
+                const res = await fetch('tpa-data.json?' + Date.now());
+                const data = await res.json();
+                
+                document.getElementById('monthLabel').textContent = data.month;
+                document.getElementById('lastUpdated').textContent = `Updated: ${new Date(data.updated).toLocaleString()}`;
+                
+                const totals = data.totals;
+                const greenClass = totals.greenPct >= 30 ? 'green' : '';
+                
+                document.getElementById('summaryCards').innerHTML = `
+                    <div class="card">
+                        <div class="value">${totals.signed}</div>
+                        <div class="label">Total Signed</div>
+                    </div>
+                    <div class="card">
+                        <div class="value">${Math.round(totals.cv)}</div>
+                        <div class="label">Total CV</div>
+                    </div>
+                    <div class="card">
+                        <div class="value ${greenClass}">${totals.greenPct.toFixed(1)}%</div>
+                        <div class="label">Green Rate</div>
+                    </div>
+                    <div class="card">
+                        <div class="value">${totals.repCount}</div>
+                        <div class="label">Active Reps</div>
+                    </div>
+                `;
+                
+                // Office cards
+                const officeOrder = ['SFL-TPA', 'SFL-KPS', 'SFL-ALR', 'SFL-KAT', 'SFL-GAB'];
+                const officeNames = {
+                    'SFL-TPA': 'TPA Main',
+                    'SFL-KPS': 'KPS',
+                    'SFL-ALR': 'ALR',
+                    'SFL-KAT': 'KAT',
+                    'SFL-GAB': 'GAB (Gaby)'
+                };
+                
+                document.getElementById('officeGrid').innerHTML = officeOrder.map(code => {
+                    const o = data.offices[code];
+                    if (!o) return '';
+                    
+                    const topReps = (o.reps || []).slice(0, 5);
+                    
+                    return `
+                        <div class="office-card">
+                            <h3>${officeNames[code]} <span class="badge">${code}</span></h3>
+                            <div class="office-stats">
+                                <div class="office-stat">
+                                    <div class="val">${o.signed}</div>
+                                    <div class="lbl">Signed</div>
+                                </div>
+                                <div class="office-stat">
+                                    <div class="val">${o.cv.toFixed(1)}</div>
+                                    <div class="lbl">CV</div>
+                                </div>
+                                <div class="office-stat">
+                                    <div class="val green">${o.greenPct.toFixed(0)}%</div>
+                                    <div class="lbl">Green</div>
+                                </div>
+                            </div>
+                            <div class="rep-list">
+                                ${topReps.map(r => `
+                                    <div class="rep-item">
+                                        <div class="name">${r.name}</div>
+                                        <div class="stats">
+                                            <span class="signed">${r.signed}</span>
+                                            <span class="cv">${r.cv.toFixed(1)} CV</span>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                
+                // All reps table
+                let allReps = [];
+                for (const [office, o] of Object.entries(data.offices)) {
+                    for (const r of (o.reps || [])) {
+                        allReps.push({ ...r, office });
+                    }
+                }
+                allReps.sort((a, b) => b.signed - a.signed);
+                
+                document.getElementById('allRepsTitle').textContent = `All TPA Reps — ${allReps.length} Total`;
+                document.getElementById('allRepRows').innerHTML = allReps.slice(0, 30).map(r => `
+                    <div class="rep-row">
+                        <div class="name">${r.name}</div>
+                        <div class="office">${r.office.replace('SFL-', '')}</div>
+                        <div>${r.signed}</div>
+                        <div>${r.cv.toFixed(1)}</div>
+                        <div class="green">${r.green}</div>
+                        <div class="drops">${r.drops}</div>
+                    </div>
+                `).join('');
+                
+            } catch (e) {
+                console.error(e);
+                document.getElementById('monthLabel').textContent = 'Error loading data';
+            }
+        }
+        
+        fetchData();
+    </script>
+</body>
+</html>
