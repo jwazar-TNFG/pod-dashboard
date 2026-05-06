@@ -1,15 +1,15 @@
 {
   "month": "May 2026",
-  "updated": "2026-05-06T19:28:41.311058",
+  "updated": "2026-05-06T19:38:20.322349",
   "paceThreshold": 100,
   "offices": {
     "SFL-TPA": {
       "signed": 65,
-      "cv": 62.13,
+      "cv": 62.129999999999995,
       "green": 0,
       "greenPct": 0.0,
       "dropPct": 0.0,
-      "repCount": 12,
+      "repCount": 41,
       "goal": 0,
       "goalPct": 0,
       "reps": [
@@ -34,9 +34,9 @@
           "goalPct": 0
         },
         {
-          "name": "Paola Patricia Lopez",
+          "name": "Kimberly Castillo",
           "signed": 4,
-          "cv": 3.16,
+          "cv": 4.0,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -44,9 +44,9 @@
           "goalPct": 0
         },
         {
-          "name": "Kimberly Castillo",
+          "name": "Paola Patricia Lopez",
           "signed": 4,
-          "cv": 4.0,
+          "cv": 3.16,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -64,16 +64,6 @@
           "goalPct": 0
         },
         {
-          "name": "Munoz, Renato E",
-          "signed": 2,
-          "cv": 1.0,
-          "green": 0,
-          "drops": 0,
-          "leads": 0,
-          "goal": 0,
-          "goalPct": 0
-        },
-        {
           "name": "Jordis Rodriguez Alvarez",
           "signed": 2,
           "cv": 2.0,
@@ -84,7 +74,27 @@
           "goalPct": 0
         },
         {
+          "name": "Munoz, Renato E",
+          "signed": 2,
+          "cv": 1.0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
           "name": "Anyelis Castell Borroto",
+          "signed": 1,
+          "cv": 1.0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Bayona, Gianina",
           "signed": 1,
           "cv": 1.0,
           "green": 0,
@@ -114,7 +124,7 @@
           "goalPct": 0
         },
         {
-          "name": "Bayona, Gianina",
+          "name": "Zelma Fernandez Velazquez",
           "signed": 1,
           "cv": 1.0,
           "green": 0,
@@ -124,9 +134,289 @@
           "goalPct": 0
         },
         {
-          "name": "Zelma Fernandez Velazquez",
-          "signed": 1,
-          "cv": 1.0,
+          "name": "Almanzar Ramos, Wilson Radames R",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Aroche Ricardo, Barbara D",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Barthelemy Jimenez, Rose Esther",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Bayona, Fatima Gianina",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Carrion Limones, Gustavo Enrique",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Castell Borroto, Anyelis",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Castillo Lemus, Kimberly",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "De La concepcion, Hilda L",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Fernandez Velazquez, Zelma",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Fiallo Borroto, Amelia",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Guzman Corredor, Diana P",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Lopez, Patricia P",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Marketing Yani LLC, Yanismeidis Barthelemy",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Miranda, Lisandra",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Molina, Glenda A",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Moya, Maria Alexandra",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Ochoa Galindo, Enrique S",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Rmunozinsurance Llc, Renato Munoz",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Rodriguez Alvares, Jordis E",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Rodriguez Torres, Valeria",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Sandino Prado, Geissell",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Santamaria Silvestre, Carolina",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Santos Orive, Ledieska",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Soza Diaz, Maria F",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "TRK Miami LLC, Carlos Cutolo",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "The Best Services OL Corp, Olga Lopez",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Tony Press Accidente, Tony Alfian",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Valero, Sheila",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Villalobos Duenas, Dianny",
+          "signed": 0,
+          "cv": 0,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -141,7 +431,7 @@
       "green": 2,
       "greenPct": 4.651162790697675,
       "dropPct": 0.0,
-      "repCount": 11,
+      "repCount": 41,
       "goal": 0,
       "goalPct": 0,
       "reps": [
@@ -156,7 +446,7 @@
           "goalPct": 0
         },
         {
-          "name": "Porras, Karla",
+          "name": "Porras, Karla J",
           "signed": 6,
           "cv": 8.0,
           "green": 0,
@@ -176,20 +466,20 @@
           "goalPct": 0
         },
         {
-          "name": "Siddals Guerra",
+          "name": "Ritzzi Arroyo",
           "signed": 4,
-          "cv": 4.0,
-          "green": 0,
+          "cv": 2.49,
+          "green": 2,
           "drops": 0,
           "leads": 0,
           "goal": 0,
           "goalPct": 0
         },
         {
-          "name": "Ritzzi Arroyo",
+          "name": "Siddals Guerra",
           "signed": 4,
-          "cv": 2.49,
-          "green": 2,
+          "cv": 4.0,
+          "green": 0,
           "drops": 0,
           "leads": 0,
           "goal": 0,
@@ -254,6 +544,306 @@
           "leads": 0,
           "goal": 0,
           "goalPct": 0
+        },
+        {
+          "name": "Aguila Golan, Yudeiky",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Arroyo, Ritzzi K",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Batista Rodriguez, Dayana",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Castellano Tarra, Dayana",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Crespo Santana, Amanda Beatriz",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Cuberos Ramirez, Raul A",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Faria Tenerelli, Carlos",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Fernandez de la Vega, Ailyn",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Ferrer, Katherine",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Gossen Amaris, Yoyce M",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Guerra, Siddals",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Hernandez Arteaga, Yenislay",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Inman, Karina R",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Louit Illas, Katia",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Maldonado, Bella",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Mercado, Luis",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Mora, Patricia",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Mugica Ramirez, Ivonne",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Negrete De Chirinos, Dayaneth",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Ochoa Delgado, Yelimar",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Olmos Rivera, Sidney C",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Pena Gomez, Paola Y",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Placeres Suarez, Yeanna",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Rivero Leal, Alejandra C",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Sabugo Friman, Susana",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Sanchez, Barbara R",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Tabares, Marisol",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Torrenegra , Leonardo",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Ulloa, Cristhiam F",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Valderrama Alvarez, Adriana C",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
         }
       ]
     },
@@ -263,7 +853,7 @@
       "green": 2,
       "greenPct": 8.333333333333332,
       "dropPct": 0.0,
-      "repCount": 10,
+      "repCount": 27,
       "goal": 0,
       "goalPct": 0,
       "reps": [
@@ -288,7 +878,7 @@
           "goalPct": 0
         },
         {
-          "name": "Alejandra Palomino",
+          "name": "Mila Multiservice Llc, Alejandra Palomino",
           "signed": 4,
           "cv": 3.5,
           "green": 0,
@@ -308,16 +898,6 @@
           "goalPct": 0
         },
         {
-          "name": "Lalesca Castilblanco",
-          "signed": 2,
-          "cv": 2.5,
-          "green": 0,
-          "drops": 0,
-          "leads": 0,
-          "goal": 0,
-          "goalPct": 0
-        },
-        {
           "name": "Lainet Naranjo",
           "signed": 2,
           "cv": 1.33,
@@ -328,9 +908,19 @@
           "goalPct": 0
         },
         {
-          "name": "Gregoria Rincon",
+          "name": "Lalesca Castilblanco",
+          "signed": 2,
+          "cv": 2.5,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Alejandra Coromoto Cubillan Romero",
           "signed": 1,
-          "cv": 1.5,
+          "cv": 0.5,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -348,6 +938,16 @@
           "goalPct": 0
         },
         {
+          "name": "Gregoria Rincon",
+          "signed": 1,
+          "cv": 1.5,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
           "name": "Suviely M Brinez Mendez",
           "signed": 1,
           "cv": 1.0,
@@ -358,9 +958,169 @@
           "goalPct": 0
         },
         {
-          "name": "Alejandra Coromoto Cubillan Romero",
-          "signed": 1,
-          "cv": 0.5,
+          "name": "Brinez Mendez, Suviely M",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Castilblanco Gonzalez, Lalesca J",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Chow Ruiz, Sugey Y Y",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Costa Rodriguez, Olga F",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Cubillan Romero, Alix",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Ferrer Anaya, Delmarys",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Ferrer Bracho, Larry",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Gonzalez, Emilia C",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Guillen Romero, Anyelina I",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Hernandez, Jacqueline",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Ortega Leal, Neira B",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Palacios Torrez, Fatima J",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Parra, Maria",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Perez Naranjo, Lainet M",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Urdaneta, Gregoria",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Younes Machaalani, Tania",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "cubillan romero, Alejandra C",
+          "signed": 0,
+          "cv": 0,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -375,7 +1135,7 @@
       "green": 0,
       "greenPct": 0.0,
       "dropPct": 0.0,
-      "repCount": 12,
+      "repCount": 32,
       "goal": 0,
       "goalPct": 0,
       "reps": [
@@ -400,16 +1160,6 @@
           "goalPct": 0
         },
         {
-          "name": "Jennyffer Suarez Urdaneta",
-          "signed": 4,
-          "cv": 3.5,
-          "green": 0,
-          "drops": 0,
-          "leads": 0,
-          "goal": 0,
-          "goalPct": 0
-        },
-        {
           "name": "Garcia, Katerine",
           "signed": 4,
           "cv": 3.83,
@@ -420,9 +1170,9 @@
           "goalPct": 0
         },
         {
-          "name": "Lydia Adam",
+          "name": "Jennyffer Suarez Urdaneta",
           "signed": 4,
-          "cv": 3.33,
+          "cv": 3.5,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -430,9 +1180,9 @@
           "goalPct": 0
         },
         {
-          "name": "Milagros Perez",
-          "signed": 3,
-          "cv": 2.33,
+          "name": "Lydia Adam",
+          "signed": 4,
+          "cv": 3.33,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -460,6 +1210,16 @@
           "goalPct": 0
         },
         {
+          "name": "Milagros Perez",
+          "signed": 3,
+          "cv": 2.33,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
           "name": "Fernanda J Loaisiga",
           "signed": 2,
           "cv": 0.66,
@@ -480,7 +1240,17 @@
           "goalPct": 0
         },
         {
-          "name": "Ana Maria Peralta",
+          "name": "Eyleen Mendoza",
+          "signed": 1,
+          "cv": 1.0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "MOONCHEESE LLC,  Ana Maria Peralta",
           "signed": 1,
           "cv": 1.5,
           "green": 0,
@@ -490,9 +1260,199 @@
           "goalPct": 0
         },
         {
-          "name": "Eyleen Mendoza",
-          "signed": 1,
-          "cv": 1.0,
+          "name": "Adam, Lydia E",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Caro Valdez, Ivette",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "De Aguiar Hernandez, Maria G",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Fuenmayor Romero, Jezayf Victoria",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Garcia, Katherine",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Gotera Suarez, Eileen",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Gutierrez Gonzalez, Oscar M",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Klick It Inc, Astrid Sanchez",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Lara Gutierrez, Cindy A",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Lares, Cristina",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Larez, Yvania",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Loaisiga, Fernanda J",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Mendoza Molina, Eyleen G",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Palma Rodriguez, Norguis B",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Perez Mata, Wilsan V",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Perez, Milagro",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Rodas Gomez, Robin",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Suarez Urdaneta, Jennyffer",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Valera , Marianella",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Yanez Molina, Marianny Y",
+          "signed": 0,
+          "cv": 0,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -507,7 +1467,7 @@
       "green": 0,
       "greenPct": 0.0,
       "dropPct": 6.25,
-      "repCount": 10,
+      "repCount": 29,
       "goal": 0,
       "goalPct": 0,
       "reps": [
@@ -532,16 +1492,6 @@
           "goalPct": 0
         },
         {
-          "name": "Maria Escobar",
-          "signed": 2,
-          "cv": 1.5,
-          "green": 0,
-          "drops": 1,
-          "leads": 0,
-          "goal": 0,
-          "goalPct": 0
-        },
-        {
           "name": "Chacon, Maria",
           "signed": 2,
           "cv": 2.0,
@@ -552,9 +1502,19 @@
           "goalPct": 0
         },
         {
-          "name": "Euar Pina",
+          "name": "Maria Escobar",
+          "signed": 2,
+          "cv": 1.5,
+          "green": 0,
+          "drops": 1,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "AO FOOD SERVICES LLC, Everlianny Alicia Ontiveros Medina",
           "signed": 1,
-          "cv": 1.0,
+          "cv": 0.33,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -562,7 +1522,7 @@
           "goalPct": 0
         },
         {
-          "name": "Lucero Estrada",
+          "name": "Euar Pina",
           "signed": 1,
           "cv": 1.0,
           "green": 0,
@@ -582,16 +1542,6 @@
           "goalPct": 0
         },
         {
-          "name": "Raineld J Vega Vargas",
-          "signed": 1,
-          "cv": 1.0,
-          "green": 0,
-          "drops": 0,
-          "leads": 0,
-          "goal": 0,
-          "goalPct": 0
-        },
-        {
           "name": "Kelly Barillas",
           "signed": 1,
           "cv": 1.0,
@@ -602,9 +1552,209 @@
           "goalPct": 0
         },
         {
-          "name": "Everlianny Alicia Ontiveros Medina",
+          "name": "Lucero Estrada",
           "signed": 1,
-          "cv": 0.33,
+          "cv": 1.0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Raineld J Vega Vargas",
+          "signed": 1,
+          "cv": 1.0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Barillas Chacon, Kely A",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Chacon Escalona, Maria",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Escobar Mayora, Maria A",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Estrada Cassiani, Saray",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Estrada Tovar, Lucero",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Farias Rivera, Diana",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Lopez, Glenys Julissa",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Marin Vasquez, Yoannellys C",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Medina Mijares, Isabella",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Orozco, Linda",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Perez, Rafael A",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Pina, Euar A",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Prime Sphere Supply LLC , Daniela Cuellar",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Quintero Blanco, Luis Alfredo",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Quiroz Aleman, Maryuri",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Sanchez Moreno, Marena Margarita",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Tela Sanchez, Tabatta",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Vasquez Cabrera, Ricsys",
+          "signed": 0,
+          "cv": 0,
+          "green": 0,
+          "drops": 0,
+          "leads": 0,
+          "goal": 0,
+          "goalPct": 0
+        },
+        {
+          "name": "Vega Vargas, Raineld J",
+          "signed": 0,
+          "cv": 0,
           "green": 0,
           "drops": 0,
           "leads": 0,
@@ -618,6 +1768,6 @@
     "signed": 186,
     "cv": 179.42,
     "greenPct": 2.1505376344086025,
-    "repCount": 55
+    "repCount": 170
   }
 }
